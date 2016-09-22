@@ -1,0 +1,142 @@
+// Foundation-Jekyll - Custom Theme Styles
+$header-bg: url(../img/header-bg.png) no-repeat center center;
+$subnav-link-padding: 0.9rem;
+$subnav-font-size: 0.75rem;
+$subnav-link-opacity: 0.15;
+$header-height: 3.5rem;
+$transition: all .35s ease-in-out;
+
+.row {
+  display: flex;
+  margin-top: 1rem;
+  float: none;
+  padding: 2em 0;
+}
+
+.centered {
+  justify-content: center;
+  align-items: center;
+}
+
+.team {
+  background: #1b1b1b;
+  background: linear-gradient(to right, #000000, #4e4e4e, #000000);
+  color: #ffe;
+  padding: 1.175rem;
+
+  h1 {
+    text-align: center;
+  }
+
+}
+
+.members {
+  display: flex;
+  margin: 1rem .5rem 0 0;
+  float: none;
+
+  div {
+    margin: .875rem;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    margin: 0;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+
+  img {
+    max-width: 300px;
+    max-height: 300px;
+  }
+
+}
+
+.header {
+  text-align: center;
+  background: $header-bg;
+  background-size: cover;
+  position: relative;
+  overflow: visible;
+  padding-top: $header-height;
+  padding-bottom: $header-height + ($subnav-link-padding * 2 + $subnav-font-size - 0.15rem);
+
+  .headline {
+    color: #ffe;
+  }
+}
+
+.header-subnav {
+  float: none;
+  position: absolute;
+  text-align: center;
+  margin: 0 auto;
+  bottom: 0;
+  width: 100%;
+
+  li {
+    float: none;
+    display: inline-block;
+
+    a {
+      padding: $subnav-link-padding 1rem;
+      font-size: $subnav-font-size;
+      color: #ffe;
+      text-transform: uppercase;
+      display: block;
+      font-weight: bold;
+      letter-spacing: 1px;
+      transition: $transition;
+
+      &.is-active {
+        background: rgba(250,250,250,$subnav-link-opacity);
+      }
+
+      &:hover {
+        background: rgba(250,250,250,$subnav-link-opacity);
+        transition: $transition;
+      }
+    }
+  }
+}
+
+.button {
+  text-align: center;
+  line-height: 1;
+  cursor: pointer;
+  -webkit-appearance: none;
+  transition: all 0.25s ease-out;
+  vertical-align: middle;
+  border: 1px solid #000;
+  border-radius: 0;
+  padding: 0.85em 1em;
+  margin: 0 1rem 1rem 0;
+  font-size: .9rem;
+  background: #fff;
+  color: #000;
+
+  &:hover {
+    background: #000;
+    color: #fff;
+  }
+
+}
+
+/* :( form override */
+
+[type="text"], [type="password"], [type="date"], [type="datetime"], [type="datetime-local"], [type="month"], [type="week"], [type="email"], [type="number"], [type="search"], [type="tel"], [type="time"], [type="url"], [type="color"], textarea {
+  border: 1px solid #000;
+}
+
+.bottom-panel {
+  display: flex;
+  background: #1d1d1d;
+  color: #ffe;
+  padding: 2em;
+  flex-direction: row;
+  justify-content: center;
+}

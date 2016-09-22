@@ -1,0 +1,30 @@
+<section class="row centered">
+    <div class="small-12 medium-6 columns">
+       <h2>Contact Us</h2>
+       <p>Do you want to provide your users with a better solution?</p>
+       <p>Lets chat!</p>
+    </div>
+    <div class="small-12 medium-4 columns end">
+      <!-- <img src="assets/img/what&#45;we&#45;do.svg" alt=""> -->
+      <form id="contactform" action="https://formspree.io/p.e.butler3@gmail.com" method="POST">
+          <input type="hidden" name="_subject" value="New Blackboard submission!" />
+          <input type="hidden" name="_cc" value="chriswirthdesign@gmail.com" />
+          <input type="text" name="_gotcha" style="display:none" />
+          <input type="hidden" name="_next" value="/" />
+
+          <label for="name">
+            Your Name:
+            <input type="text" name="name">
+          </label>
+          <label for="_replyto">
+            Your Email:
+            <input type="email" name="_replyto">
+          </label>
+          <label for="message">
+            How can we help?
+            <textarea id="message" name="message" cols="30" rows="2"></textarea>
+          </label>
+          <input id="sendMessage" type="submit" value="Submit" class="button">
+      </form>
+    </div>
+</section>
